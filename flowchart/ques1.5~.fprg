@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rohi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-23 06:10:18 PM"/>
+        <attribute name="created" value="cm9oaTtST0hJVC1MQVBJOzIwMjMtMDEtMjM7MDU6NTE6MzcgUE07MjQ0MQ=="/>
+        <attribute name="edited" value="cm9oaTtST0hJVC1MQVBJOzIwMjMtMDEtMjM7MDY6MTA6MTggUE07MTsyNTQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="option, i, j, leng" type="Integer" array="False" size=""/>
+            <declare name="str1, str2" type="String" array="False" size=""/>
+            <output expression="&quot;Enter String (500 or less) : &quot;" newline="True"/>
+            <input variable="str1"/>
+            <output expression="&quot;String Entered : &quot; &amp; str1" newline="True"/>
+            <for variable="i" start="0" end="" direction="inc" step="1"/>
+            <output expression="&quot;Enter operation to perform&quot;&amp;&#13;&#10;&quot;1 - Length of the string&quot;&amp;&#13;&#10;&quot;2 - Concatenate the strings&quot;&amp;&#13;&#10;&quot;3 - Reverse of the string&quot;&amp;&#13;&#10;&quot;4 - Copy String&quot;&amp;&#13;&#10;&quot;5 - Exit&quot;&amp;&#13;&#10;&quot;(1,2,3,4,5) : &quot;" newline="True"/>
+            <input variable="option"/>
+            <if expression="option == 1">
+                <then>
+                    <output expression="&quot;Length Of String : &quot; &amp; leng" newline="True"/>
+                </then>
+                <else>
+                    <if expression="option == 2">
+                        <then>
+                            <output expression="&quot;Enter String 2 (500 or less) : &quot;" newline="True"/>
+                            <input variable="str2"/>
+                            <output expression="&quot;String Entered : &quot; &amp; str2" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

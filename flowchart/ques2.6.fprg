@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rohi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-23 06:25:25 PM"/>
+        <attribute name="created" value="cm9oaTtST0hJVC1MQVBJOzIwMjMtMDEtMjM7MDY6MTU6MDUgUE07MjQzNw=="/>
+        <attribute name="edited" value="cm9oaTtST0hJVC1MQVBJOzIwMjMtMDEtMjM7MDY6MjU6MjUgUE07MTsyNTQ4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, space, rows, k" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number of rows: &quot;" newline="True"/>
+            <input variable="rows"/>
+            <for variable="i" start="1" end="rows" direction="inc" step="1">
+                <assign variable="k" expression="0"/>
+                <for variable="space" start="1" end="rows-i" direction="inc" step="1">
+                    <output expression="&quot;  &quot;" newline="False"/>
+                </for>
+                <while expression="k != 2 * i - 1">
+                    <output expression="&quot;* &quot;" newline="False"/>
+                    <assign variable="k" expression="k+1"/>
+                </while>
+                <output expression="&quot;&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

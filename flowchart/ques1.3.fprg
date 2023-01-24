@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rohi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-23 05:51:36 PM"/>
+        <attribute name="created" value="cm9oaTtST0hJVC1MQVBJOzIwMjMtMDEtMjI7MTA6MDA6MjkgUE07MjQzMQ=="/>
+        <attribute name="edited" value="cm9oaTtST0hJVC1MQVBJOzIwMjMtMDEtMjM7MDU6NTE6MzYgUE07MzsyNTUw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter number of Fibonacci Nmber to print : &quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;First &quot; &amp; n &amp; &quot; Fibonacci Number(s) : &quot;" newline="False"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="fibonacci(i) &amp; &quot; &quot;" newline="False"/>
+            </for>
+        </body>
+    </function>
+    <function name="fibonacci" type="Integer" variable="i">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <if expression="n==0">
+                <then>
+                    <assign variable="i" expression="0"/>
+                </then>
+                <else>
+                    <if expression="n==1">
+                        <then>
+                            <assign variable="i" expression="1"/>
+                        </then>
+                        <else>
+                            <assign variable="i" expression="fibonacci(n-1) + fibonacci(n-2)"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

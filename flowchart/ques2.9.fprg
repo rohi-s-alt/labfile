@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rohi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-23 07:11:50 PM"/>
+        <attribute name="created" value="cm9oaTtST0hJVC1MQVBJOzIwMjMtMDEtMjM7MDc6MDQ6NTYgUE07MjQ0Mg=="/>
+        <attribute name="edited" value="cm9oaTtST0hJVC1MQVBJOzIwMjMtMDEtMjM7MDc6MTE6NTAgUE07MTsyNTQy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, item, sum" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the number of elements : &quot;" newline="True"/>
+            <input variable="item"/>
+            <declare name="arr" type="Integer" array="True" size="item"/>
+            <for variable="i" start="0" end="item-1" direction="inc" step="1">
+                <output expression="&quot;Enter Element &quot; &amp; i+1 &amp; &quot; : &quot;" newline="True"/>
+                <input variable="arr[i]"/>
+            </for>
+            <for variable="i" start="0" end="item-1" direction="inc" step="1">
+                <assign variable="sum" expression="sum + arr[i]"/>
+            </for>
+            <assign variable="avg" expression="sum/item"/>
+            <output expression="&quot;Sum of all numbers = &quot; &amp; sum" newline="True"/>
+            <output expression="&quot;Average of all numbers = &quot; &amp; avg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

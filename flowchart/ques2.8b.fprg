@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rohi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-23 07:04:10 PM"/>
+        <attribute name="created" value="cm9oaTtST0hJVC1MQVBJOzIwMjMtMDEtMjM7MDY6NTE6MjUgUE07MjQzOQ=="/>
+        <attribute name="edited" value="cm9oaTtST0hJVC1MQVBJOzIwMjMtMDEtMjM7MDc6MDQ6MTAgUE07MTsyNTQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, k, dec, leng" type="Integer" array="False" size=""/>
+            <assign variable="k" expression="0"/>
+            <declare name="bin" type="Integer" array="True" size="64"/>
+            <output expression="&quot;Enter Decimal Number : &quot;" newline="True"/>
+            <input variable="dec"/>
+            <assign variable="i" expression="dec"/>
+            <for variable="i" start="dec" end="1" direction="dec" step="i/2">
+                <assign variable="bin[k]" expression="i%2"/>
+                <assign variable="k" expression="k+1"/>
+            </for>
+            <output expression="&quot;Binary = &quot;" newline="False"/>
+            <for variable="j" start="k-1" end="0" direction="dec" step="1">
+                <output expression="bin[j]" newline="False"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

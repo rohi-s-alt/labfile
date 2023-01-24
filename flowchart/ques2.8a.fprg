@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rohi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-23 06:41:59 PM"/>
+        <attribute name="created" value="cm9oaTtST0hJVC1MQVBJOzIwMjMtMDEtMjM7MDY6MzE6MDggUE07MjQzOA=="/>
+        <attribute name="edited" value="cm9oaTtST0hJVC1MQVBJOzIwMjMtMDEtMjM7MDY6NDE6NTkgUE07MTsyNTUz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numoitem, num, i, sum" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <output expression="&quot;Enter number of items you will be entering : &quot;" newline="True"/>
+            <input variable="numoitem"/>
+            <for variable="i" start="1" end="numoitem" direction="inc" step="1">
+                <output expression="&quot;Enter number &quot; &amp; i &amp; &quot; : &quot;" newline="True"/>
+                <input variable="num"/>
+                <if expression="num &lt; 0">
+                    <then/>
+                    <else>
+                        <assign variable="sum" expression="sum + num"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;Sum of numbers = &quot; &amp; sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

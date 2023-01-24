@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rohi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-23 07:17:14 PM"/>
+        <attribute name="created" value="cm9oaTtST0hJVC1MQVBJOzIwMjMtMDEtMjM7MDc6MTE6NTUgUE07MjQzOQ=="/>
+        <attribute name="edited" value="cm9oaTtST0hJVC1MQVBJOzIwMjMtMDEtMjM7MDc6MTc6MTQgUE07MTsyNTQ4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter a positive integer: &quot;" newline="True"/>
+            <input variable="num"/>
+            <output expression="&quot;Sum of &quot; &amp; num &amp; &quot; natural number(s) = &quot; &amp; add(num)" newline="True"/>
+        </body>
+    </function>
+    <function name="add" type="Integer" variable="i">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <if expression="n == 0">
+                <then>
+                    <assign variable="i" expression="n"/>
+                </then>
+                <else>
+                    <assign variable="i" expression="n + add(n - 1)"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
