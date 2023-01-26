@@ -255,25 +255,26 @@ void multiply() {
     scanf("%d", &row2);
     printf("Number of Columns : ");
     scanf("%d", &column2);
+	
 
-    int arr1[row1][column1];
-    int arr2[row2][column2];
-
-    printf("Enter Array 1 \n");
-    for(i=0; i<row1; i++) {
-        for(j=0; j<column1; j++) {
-            printf("Enter Row %d - column %d : ", i+1, j+1);
-            scanf("%d", &arr1[i][j]);   
-        }
-    }
-    printf("Enter Array 2 \n");
-    for(i=0; i<row2; i++) {
-        for(j=0; j<column2; j++) {
-            printf("Enter Row %d - column %d : ", i+1, j+1);
-            scanf("%d", &arr2[i][j]);   
-        }
-    }
     if(column1 == row2) {
+        int arr1[row1][column1];
+        int arr2[row2][column2];
+
+        printf("Enter Array 1 \n");
+        for(i=0; i<row1; i++) {
+            for(j=0; j<column1; j++) {
+                printf("Enter Row %d - column %d : ", i+1, j+1);
+                scanf("%d", &arr1[i][j]);   
+            }
+        }
+        printf("Enter Array 2 \n");
+        for(i=0; i<row2; i++) {
+            for(j=0; j<column2; j++) {
+                printf("Enter Row %d - column %d : ", i+1, j+1);
+                scanf("%d", &arr2[i][j]);   
+            }
+        }
         int MULTI[row1][column2];
         for(i=0; i<row1; i++) {
             for(j=0; j<column2; j++){
